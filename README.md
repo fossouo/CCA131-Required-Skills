@@ -34,21 +34,20 @@ sudo vi /etc/hosts
 - reduce the swappiness (vm.swappiness=1)
 ```sh
 # Check vm.swappiness value
-sysctl vm.swappiness
+sysctl vm.swappiness=1
 
-# Change vm.swappiness value
-sudo vi /proc/sys/vm/swappiness
-# edit and add the line:
-vm.swappiness=1
+# Check vm.swappiness value
+sudo sysctl vm.swappiness
+
 ```
 - configure IPTable if required: Hadoop requires many ports for communications (Configuration -> All Port Configurations to see all ports used)
 - disable IPv6
 - disable SELinux
 ```sh
-sudo vi /etc/syslog/selinux
+sudo vi /etc/selinux/config
 
 # Edit 
-SELINUX=disabled
+SELINUX=enforcing to SELINUX=permissive
 ```
 - install and configure ntp daemon for service synchronization
 - Hosts -> Host Inspector checks for many of the items just discussed
