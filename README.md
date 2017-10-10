@@ -19,8 +19,8 @@ sudo service httpd status
 Create the directory that will contain CDH parcels in /var/www/html/ 
 ```sh
 # Download CDH parcels
-sudo wget http://archive.cloudera.com/cdh5/parcels/latest/CDH-5.11.1-1.cdh5.11.1.p0.4-el7.parcel
-sudo wget http://archive.cloudera.com/cdh5/parcels/latest/CDH-5.11.1-1.cdh5.11.1.p0.4-el7.parcel.sha1
+sudo wget http://archive.cloudera.com/cdh5/parcels/latest/CDH-5.12.1-1.cdh5.12.1.p0.3-el7.parcel
+sudo wget http://archive.cloudera.com/cdh5/parcels/latest/CDH-5.12.1-1.cdh5.12.1.p0.3-el7.parcel.sha1
 sudo wget http://archive.cloudera.com/cdh5/parcels/latest/manifest.json
 ```
 
